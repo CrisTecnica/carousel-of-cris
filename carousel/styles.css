@@ -1,0 +1,58 @@
+/* Estilos CSS para o carrossel */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-btn {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#prevBtn {
+    left: 10px; /* Define a posição à esquerda */
+}
+
+#nextBtn {
+    right: 10px; /* Define a posição à direita */
+}
+
+/* Estilo para o título das imagens (opcional) */
+.image-title {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
